@@ -3,6 +3,8 @@
 
 # Show me the ROLL
 
+![Image](./smtr.webp)
+
 The module automatically expand chat messages containing dice roll results and hide specific elements within those messages.
 
 
