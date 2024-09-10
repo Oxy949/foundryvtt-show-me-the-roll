@@ -11,7 +11,7 @@ Hooks.once('init', async function () {
 
     game.settings.register("foundryvtt-show-me-the-roll", "hideRollFormula", {
         name: "Hide Roll Formula",
-        hint: "Automaticly hide dice formula of the roll",
+        hint: "Hide the dice formula of the roll",
         scope: "world",
         config: true,
         type: Boolean,
@@ -21,7 +21,7 @@ Hooks.once('init', async function () {
 
     game.settings.register("foundryvtt-show-me-the-roll", "hideSmallResult", {
         name: "Hide Small Roll Result",
-        hint: "Show or hide the number right to the dices.",
+        hint: "Hide the number right to the dices.",
         scope: "world",
         config: true,
         type: Boolean,
@@ -31,7 +31,7 @@ Hooks.once('init', async function () {
 
     game.settings.register("foundryvtt-show-me-the-roll", "hideBottomResult", {
         name: "Hide Total Roll Result",
-        hint: "Show or hide the bottom number.",
+        hint: "Hide the bottom result number.",
         scope: "world",
         config: true,
         type: Boolean,

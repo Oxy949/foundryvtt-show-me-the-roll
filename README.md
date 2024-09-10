@@ -1,5 +1,4 @@
 ![](https://img.shields.io/badge/Foundry-v12-informational) 
-![Latest Release Download Count](https://img.shields.io/github/downloads/oxy949/foundryvtt-show-me-the-roll/latest/module.zip)
 
 # Show me the ROLL
 
@@ -18,8 +17,9 @@ The module automatically expand chat messages containing dice roll results and h
 ## Module settings
 
 * Auto Expand - Automaticly expand dice roll result for you
-* Hide Small Roll Result - Show or hide the number right to the dices
-* Hide Total Roll Result - Show or hide the bottom number
+* Hide Roll Formula - Hide the dice formula of the roll
+* Hide Small Roll Result - Hide the number right to the dices
+* Hide Total Roll Result - Hide the bottom result number
 
 
 ## How it's work?
