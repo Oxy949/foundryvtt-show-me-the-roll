@@ -15,7 +15,7 @@ Hooks.once('init', async function () {
         scope: "world",
         config: true,
         type: Boolean,
-        default: true,
+        default: false,
         requiresReload: true
     });
 
@@ -53,18 +53,18 @@ Hooks.on("renderChatMessage", function (message, html, data) {
         }
         
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideRollFormula")) {
-            html.find('.dice-total').css('visibility', 'hidden');
-            html.find('.dice-total').css('position', 'absolute');
-        }
-
-        if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
             html.find('.dice-formula').css('visibility', 'hidden');
             html.find('.dice-formula').css('position', 'absolute');
         }
 
+        if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
+            html.find('.dice-tooltip .total').css('visibility', 'hidden');
+            html.find('.dice-tooltip .total').css('position', 'absolute');
+        }
+
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
-            html.find('.dice-tooltip .tooltip-part .total').css('visibility', 'hidden');
-            html.find('.dice-tooltip .tooltip-part .total').css('position', 'absolute');
+            html.find('.dice-total').css('visibility', 'hidden');
+            html.find('.dice-total').css('position', 'absolute');
         }
     }
 });
