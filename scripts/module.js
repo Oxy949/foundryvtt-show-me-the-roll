@@ -25,13 +25,23 @@ Hooks.once('init', async function () {
         scope: "world",
         config: true,
         type: Boolean,
-        default: false,
+        default: true,
         requiresReload: true
     });
 
     game.settings.register("foundryvtt-show-me-the-roll", "hideBottomResult", {
         name: "Hide Total Roll Result",
         hint: "Hide the bottom result number.",
+        scope: "world",
+        config: true,
+        type: Boolean,
+        default: true,
+        requiresReload: true
+    });
+
+    game.settings.register("foundryvtt-show-me-the-roll", "disableClickInteraction", {
+        name: "Disable Interaction",
+        hint: "Disable 'click to expand/shrink' logic. Usefull if you don't want to acidently hide your roll's dice",
         scope: "world",
         config: true,
         type: Boolean,
@@ -65,6 +75,10 @@ Hooks.on("renderChatMessage", function (message, html, data) {
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
             html.find('.dice-total').css('visibility', 'hidden');
             html.find('.dice-total').css('position', 'absolute');
+        }
+
+        if (game.settings.get("foundryvtt-show-me-the-roll", "disableClickInteraction")) {
+            html.find('.dice-roll').addClass('no-interaction');
         }
     }
 });
