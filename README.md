@@ -4,7 +4,7 @@
 
 ![Image](./smtr.webp)
 
-The module automatically expand chat messages containing dice roll results and hide specific elements within those messages.
+The module automatically expand chat messages containing dice roll results and (optionally) hide specific elements within those messages.
 
 
 ## How to install 
@@ -18,7 +18,7 @@ The module automatically expand chat messages containing dice roll results and h
 
 * Auto Expand - Automaticly expand dice roll result for you
 * Hide Roll Formula - Hide the dice formula of the roll
-* Hide Small Roll Result - Hide the number right to the dices
+* Hide Subtotal Roll Result - Hide the sub-total result number (right to the dices)
 * Hide Total Roll Result - Hide the bottom result number
 
 

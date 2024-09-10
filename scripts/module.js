@@ -20,12 +20,12 @@ Hooks.once('init', async function () {
     });
 
     game.settings.register("foundryvtt-show-me-the-roll", "hideSmallResult", {
-        name: "Hide Small Roll Result",
-        hint: "Hide the number right to the dices.",
+        name: "Hide Subtotal Roll Result",
+        hint: "Hide the sub-total result number (right to the dices)",
         scope: "world",
         config: true,
         type: Boolean,
-        default: true,
+        default: false,
         requiresReload: true
     });
 
@@ -35,7 +35,7 @@ Hooks.once('init', async function () {
         scope: "world",
         config: true,
         type: Boolean,
-        default: true,
+        default: false,
         requiresReload: true
     });
 });
