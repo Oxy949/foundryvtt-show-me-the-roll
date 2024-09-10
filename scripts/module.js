@@ -38,6 +38,7 @@ Hooks.on("renderChatMessage", function (message, html, data) {
     if (message.isRoll) {
         if (game.settings.get("foundryvtt-show-me-the-roll", "autoExpand")) {
             html.find('.dice-roll').addClass('expanded');
+            html.find('.dice-roll .dice-tooltip').addClass('expanded');
         }
 
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
