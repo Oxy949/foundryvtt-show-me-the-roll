@@ -42,10 +42,8 @@ Hooks.on("renderChatMessage", function (message, html, data) {
 
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
             html.find('.dice-tooltip .tooltip-part').css('margin-bottom', '0px');
-            html.find('.dice-tooltip .tooltip-part .total').css('visibility', 'hidden');
             html.find('.dice-total').css('visibility', 'hidden');
             html.find('.dice-total').css('height', '0px');
-            html.find('.dice-total').css('visibility', 'hidden');
             html.find('.dice-total').css('visibility', 'hidden');
         }
 
