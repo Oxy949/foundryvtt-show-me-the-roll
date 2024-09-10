@@ -56,7 +56,7 @@ Hooks.once('ready', async function() {
 
 Hooks.on("renderChatMessage", function (message, html, data) {
     // Check if the message is a roll
-    if (message.isRoll) {
+    if (message.isRoll || (message.rolls && message.rolls.length > 0)) {
         if (game.settings.get("foundryvtt-show-me-the-roll", "autoExpand")) {
             html.find('.dice-roll').addClass('expanded');
             html.find('.dice-roll .dice-tooltip').addClass('expanded');
