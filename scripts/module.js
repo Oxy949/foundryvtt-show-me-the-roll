@@ -1,7 +1,7 @@
 Hooks.once('init', async function () {
     game.settings.register("foundryvtt-show-me-the-roll", "autoExpand", {
         name: "Auto Expand",
-        hint: "Automaticly expand dice roll result for you",
+        hint: "Automatically show (expand) dice roll result for you",
         scope: "world",
         config: true,
         type: Boolean,
@@ -41,7 +41,7 @@ Hooks.once('init', async function () {
 
     game.settings.register("foundryvtt-show-me-the-roll", "disableClickInteraction", {
         name: "Disable Interaction",
-        hint: "Disable 'click to expand/shrink' logic. Usefull if you don't want to acidently hide your roll's dice",
+        hint: "Disable 'click to expand/shrink' logic. Useful if you don't want to accidentally hide your roll's dice.",
         scope: "world",
         config: true,
         type: Boolean,

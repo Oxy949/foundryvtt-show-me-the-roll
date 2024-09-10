@@ -16,10 +16,11 @@ The module automatically expand chat messages containing dice roll results and (
 
 ## Module settings
 
-* Auto Expand - Automaticly expand dice roll result for you
+* Auto Expand - Automatically show (expand) dice roll result for you
 * Hide Roll Formula - Hide the dice formula of the roll
 * Hide Subtotal Roll Result - Hide the sub-total result number (right to the dices)
 * Hide Total Roll Result - Hide the bottom result number
+* Disable Interaction - Disable 'click to expand/shrink' logic. Useful if you don't want to accidentally hide your roll's dice
 
 
 ## How it's work?
