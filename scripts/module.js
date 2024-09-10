@@ -49,7 +49,7 @@ Hooks.on("renderChatMessage", function (message, html, data) {
             html.find('.dice-total').css('visibility', 'hidden');
         }
 
-        if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
+        if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
             html.find('.dice-tooltip .tooltip-part .total').css('visibility', 'hidden');
             html.find('.dice-tooltip .tooltip-part .total').css('width', '0');
             html.find('.dice-tooltip .tooltip-part .total').css('height', '0');
