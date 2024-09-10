@@ -15,6 +15,13 @@ The module automatically expand chat messages containing dice roll results and h
 3. Enable the module in your world
 4. Enjoy!
 
+## Module settings
+
+* Auto Expand - Automaticly expand dice roll result for you
+* Hide Small Roll Result - Show or hide the number right to the dices
+* Hide Total Roll Result - Show or hide the bottom number
+
+
 ## How it's work?
 
 This code uses the `renderChatMessage` hook in Foundry VTT to automatically expand chat messages containing dice roll results and hide specific elements within those messages. When a message is rendered, it checks if it contains a dice roll (`message.isRoll`). If so, it adds the `expanded` class to the `.dice-roll` element, ensuring that the details of the roll are immediately visible. Additionally, it hides elements with the classes `.tooltip-part .total` and `.dice-total` by setting their visibility to hidden, preventing the total value and tooltips from being shown. This ensures that the roll results are displayed without the need for players to manually click to expand them, while keeping certain elements hidden from view.
