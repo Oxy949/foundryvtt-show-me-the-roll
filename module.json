@@ -1,16 +1,23 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "foundryvtt-show-me-the-roll",
+  "title": "Show me the ROLL",
+  "description": "This module uses the renderChatMessage hook in Foundry VTT to automatically expand chat messages containing dice roll results and hide specific elements within those messages.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 10,
-    "verified": 10,
-    "maximum": 11
+    "minimum": 12,
+    "verified": 12,
+    "maximum": 12
   },
   "authors": [
+    {
+      "name": "Oxy949",
+      "email": "oxy949@gmail.com",
+      "url": "https://boosty.to/oxy949",
+      "discord": "oxy949",
+      "flags": {}
+    },
     {
       "name": "The League of Extraordinary FVTT Developers",
       "url": "https://github.com/League-of-Foundry-Developers",
