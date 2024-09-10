@@ -1,48 +1,43 @@
 {
   "id": "foundryvtt-show-me-the-roll",
   "title": "Show me the ROLL",
-  "description": "This module uses the renderChatMessage hook in Foundry VTT to automatically expand chat messages containing dice roll results and hide specific elements within those messages.",
+  "description": "This module automatically expand chat messages containing dice roll results and hide specific elements within those messages.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 12,
-    "verified": 12,
-    "maximum": 12
+      "minimum": 12,
+      "verified": 12,
+      "maximum": 12
   },
   "authors": [
-    {
-      "name": "Oxy949",
-      "email": "oxy949@gmail.com",
-      "url": "https://boosty.to/oxy949",
-      "discord": "oxy949",
-      "flags": {}
-    },
-    {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
-    }
+      {
+          "name": "Oxy949",
+          "email": "oxy949@gmail.com",
+          "url": "https://boosty.to/oxy949",
+          "discord": "oxy949",
+          "flags": {}
+      }
   ],
   "relationships": {
-    "systems": [],
-    "requires": []
+      "systems": [],
+      "requires": []
   },
   "esmodules": [
-    "scripts/module.js"
+      "scripts/module.js"
   ],
   "scripts": [
-    "scripts/lib/lib.js"
+      "scripts/lib/lib.js"
   ],
   "styles": [
-    "styles/module.css"
+      "styles/module.css"
   ],
   "languages": [
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "languages/en.json"
-    }
+      {
+          "lang": "en",
+          "name": "English",
+          "path": "languages/en.json"
+      }
   ],
   "url": "#{URL}#",
   "manifest": "#{MANIFEST}#",
@@ -50,9 +45,9 @@
   "license": "LICENSE",
   "readme": "README.md",
   "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
+      {
+          "type": "icon",
+          "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+      }
   ]
 }
