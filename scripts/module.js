@@ -8,6 +8,17 @@ Hooks.once('init', async function () {
         default: true,
         requiresReload: true
     });
+
+    game.settings.register("foundryvtt-show-me-the-roll", "hideRollFormula", {
+        name: "Hide Roll Formula",
+        hint: "Automaticly hide dice formula of the roll",
+        scope: "world",
+        config: true,
+        type: Boolean,
+        default: true,
+        requiresReload: true
+    });
+
     game.settings.register("foundryvtt-show-me-the-roll", "hideSmallResult", {
         name: "Hide Small Roll Result",
         hint: "Show or hide the number right to the dices.",
@@ -40,18 +51,19 @@ Hooks.on("renderChatMessage", function (message, html, data) {
             html.find('.dice-roll').addClass('expanded');
             html.find('.dice-roll .dice-tooltip').addClass('expanded');
         }
+        
+        if (game.settings.get("foundryvtt-show-me-the-roll", "hideRollFormula")) {
+            html.find('.dice-total').css('visibility', 'hidden');
+            html.find('.dice-total').css('position', 'absolute');
+        }
 
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
-            html.find('.dice-tooltip .tooltip-part').css('margin-bottom', '0px');
-            html.find('.dice-total').css('visibility', 'hidden');
-            html.find('.dice-total').css('height', '0px');
-            html.find('.dice-total').css('position', 'absolute');
+            html.find('.dice-formula').css('visibility', 'hidden');
+            html.find('.dice-formula').css('position', 'absolute');
         }
 
         if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
             html.find('.dice-tooltip .tooltip-part .total').css('visibility', 'hidden');
-            html.find('.dice-tooltip .tooltip-part .total').css('width', '0');
-            html.find('.dice-tooltip .tooltip-part .total').css('height', '0');
             html.find('.dice-tooltip .tooltip-part .total').css('position', 'absolute');
         }
     }
