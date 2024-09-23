@@ -64,18 +64,15 @@ Hooks.on("renderChatMessage", function (message, html, data) {
             }
         
             if (game.settings.get("foundryvtt-show-me-the-roll", "hideRollFormula")) {
-                html.find('.dice-formula').css('visibility', 'hidden');
-                html.find('.dice-formula').css('position', 'absolute');
+                html.find('.dice-formula').remove();
             }
     
             if (game.settings.get("foundryvtt-show-me-the-roll", "hideSmallResult")) {
-                html.find('.dice-tooltip .total').css('visibility', 'hidden');
-                html.find('.dice-tooltip .total').css('position', 'absolute');
+                html.find('.dice-tooltip .total').remove();
             }
     
             if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
-                html.find('.dice-roll .dice-total').css('visibility', 'hidden');
-                html.find('.dice-roll .dice-total').css('position', 'absolute');
+                html.find('.dice-roll .dice-total').remove();
             }
     
             if (game.settings.get("foundryvtt-show-me-the-roll", "disableClickInteraction")) {
