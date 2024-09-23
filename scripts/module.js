@@ -74,8 +74,8 @@ Hooks.on("renderChatMessage", function (message, html, data) {
             }
     
             if (game.settings.get("foundryvtt-show-me-the-roll", "hideBottomResult")) {
-                html.find('.dice-total').css('visibility', 'hidden');
-                html.find('.dice-total').css('position', 'absolute');
+                html.find('.dice-roll .dice-total').css('visibility', 'hidden');
+                html.find('.dice-roll .dice-total').css('position', 'absolute');
             }
     
             if (game.settings.get("foundryvtt-show-me-the-roll", "disableClickInteraction")) {
